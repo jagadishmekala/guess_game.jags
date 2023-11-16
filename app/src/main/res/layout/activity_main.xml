@@ -1,0 +1,73 @@
+<!-- res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/logoImageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/j_logo"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:text="Enter your guess 1-50..?"/>
+
+    <EditText
+        android:id="@+id/editTextGuess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/button3"
+        android:inputType="number"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextGuess"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/holo_green_light"
+        android:background="@drawable/button"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSubmit"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Result will appear here" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+    android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/j_logo"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:text="Powered By"/>
+    </LinearLayout>
+
+</LinearLayout>

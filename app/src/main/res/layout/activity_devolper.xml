@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/black"
+    android:gravity="center"
+    tools:context=".Devolper">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:id="@+id/backbutton"
+            android:src="@mipmap/puzzle"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:src="@mipmap/jagas"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:text="Jagadish Mekala"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:text="Android Developer"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/instagram"
+            android:layout_height="40dp"
+            android:layout_margin="20sp"
+            android:src="@mipmap/instagram"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/blogger"
+            android:layout_margin="20sp"
+            android:src="@mipmap/blogger"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="20sp"
+            android:id="@+id/linkedin"
+            android:src="@mipmap/linkedin"/>
+    </LinearLayout>
+
+</LinearLayout>
